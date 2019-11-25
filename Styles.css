@@ -7,7 +7,7 @@ body{
     font-size: 14px;
     opacity: 0;
     transition: opacity 2s;
-    -webkit-transition: opacity 2.5s;
+    -webkit-transition: opacity 1.5s;
 }
 .riotlogo {
     width: 150px;
@@ -39,12 +39,12 @@ body{
 .info-bar {
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     width: 30%;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-around;
     list-style: none;
     z-index: 1;
-    top: 6%;
+    top: 70px;
 }
 .info-bar-fs {
     color: #f14545;
