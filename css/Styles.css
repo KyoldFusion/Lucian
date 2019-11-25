@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
 
+html {
+    height: 100%;
+    width: 100%;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,13 +14,14 @@ body{
     -webkit-transition: opacity 1.5s;
 }
 .riotlogo {
-    width: 150px;
-    height: 59px;
+    width: 120px;
+    height: 36px;
     position: absolute;
     z-index: 2;
     display: inline-flex;
     left: 0;
     overflow: hidden;
+    top: 7px;
     
 }
 .menu {
@@ -34,7 +39,6 @@ body{
     position: absolute;
     z-index: 0;
     transition: 2s ease;
-    display: relative;
 }
 
 .info-bar {
@@ -45,7 +49,8 @@ body{
     justify-content: space-around;
     list-style: none;
     z-index: 1;
-    top: 70px;
+    top: 40px;
+    overflow: hidden;
 }
 .info-bar-fs {
     color: #f14545;
@@ -63,12 +68,11 @@ body{
 
 .Vertnav {
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    position: absolute;
-    display: inline-block;
+    position: fixed;
     justify-content: space-around;
     list-style: none;
     z-index: 1;
-    top: 40%;
+    top: 250px;
     line-height: 1.8;
     background: #0f0f0f;
     width: 150px;
@@ -78,6 +82,12 @@ body{
     box-shadow: 10px 10px 10px;
     text-emphasis: 1;
     font-weight: 400px;
+}
+.infos2 {
+    visibility: hidden;
+}
+.info-bar2{
+    visibility: hidden;
 }
 .vert-bar-fs {
     color: #ffffff;
@@ -105,7 +115,7 @@ body{
 
 nav.mainlinks{
     width: 100%;
-    height: 60px;
+    height: 30px;
     background:rgb(255, 255, 255);
     display: flex;
     opacity: 1;
@@ -133,22 +143,41 @@ nav.mainlinks{
     justify-content: space-evenly;
 }
 .lang-bar{
-    display: flex;
+    display: inline-flex;
     color: rgb(121, 121, 121);
     background-color: transparent;
     border: none;
     font-size: 14px;
+    z-index: 2;
+    position: relative;
+    top: -19px;
 }
 .globe-icon {
     display: inline-flex;
     width: 30px;
     height: 30px;
-    padding-top: 13px;
+    top: -8px;
+    position: relative;
+    left: 12px;
 }
 
 .menu-lang {
-    display: inline-flex;
+    position: absolute;
     width: 200px;
+    height: 60px;
+    right: 5px;
+    display: inline-block;
+    top: 2px;
+}
+.menu-lang-bar{
+    height: 60px;
+    position: relative;
+    display: inline-flex;
+}
+.lang-bar-option {
+    height: 60px;
+    position: relative;
+    display: inline-flex;
 }
 .menu ul li{
     list-style: none;
@@ -159,7 +188,6 @@ nav.mainlinks{
     color: rgb(155, 155, 155);
     height: 44px;
     text-decoration: none;
-    padding: 10px;
     margin: 0 -10px;
     display: flex;
 }
@@ -198,7 +226,7 @@ nav.mainlinks{
 /* animation page loading */
 
 body { 
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 }   
